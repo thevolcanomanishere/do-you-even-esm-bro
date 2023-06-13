@@ -1,33 +1,8 @@
-import { configureChains, createClient, mainnet } from "@wagmi/core";
-import { publicProvider } from "@wagmi/core/providers/public";
-import { alchemyProvider } from "@wagmi/core/providers/alchemy";
-import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
-import { hardhat } from "@wagmi/core/chains";
-import { watchReserveAuctionFindersEthEvent } from "./generated/index.js";
+import { sum } from "./package.js";
 
-const isLocal = true;
+export const print = (message: string) => console.log(message);
 
-const { chains, provider } = configureChains(
-  [mainnet],
-  [
-    alchemyProvider({
-      apiKey: process.env.ALCHEMY_KEY as string,
-    }),
-  ]
-);
-
-const client = createClient({
-  provider,
-});
-
-client.autoConnect();
-
-watchReserveAuctionFindersEthEvent(
-  {
-    event: "AuctionBid",
-  },
-  (...event) => {
-    console.log("Bid");
-    console.log(event);
-  }
-);
+export const printSum = (a: number, b: number) => {
+  const result = sum(a, b);
+  print(result.toString());
+};
