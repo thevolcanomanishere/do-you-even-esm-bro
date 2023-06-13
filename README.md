@@ -1,4 +1,4 @@
-# Modern Typescript + ESM + Jest starter project
+# ✨ Modern Typescript + ESM + Jest starter project ✨
 
 Trying to get the simplest of Typescript projects going and can't figure out what the magic combination of commands, packages,  and config files is? Me too. So I made this.
 
