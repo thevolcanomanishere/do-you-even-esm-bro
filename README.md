@@ -1,5 +1,13 @@
-`npx wagmi generate` to generate the type interfaces for contracts and generate functions etc etc.
+# Modern Typescript + ESM + Jest starter project
 
-`npm run build`
+Trying to get the simplest of Typescript projects going and can't figure out what the magic combination of commands, packages,  and config files is? Me too. So I made this.
 
-`node lib/index.js`
+## Commands
+
+`yarn start` - Compiles and runs with Node.
+
+`yarn watch` - Compiles, watches for changes, restarts on changes and runs with nodemon.
+
+`yarn test` - Runs Jest tests.
+
+`yarn test:coverage` - Runs Jest tests and outputs coverage.
