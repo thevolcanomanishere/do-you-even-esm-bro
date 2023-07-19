@@ -6,3 +6,5 @@ export const printSum = (a: number, b: number) => {
   const result = sum(a, b);
   print(result.toString());
 };
+
+console.log("Hello");
