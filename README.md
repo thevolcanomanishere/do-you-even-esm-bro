@@ -4,7 +4,7 @@ Trying to get the simplest of Typescript projects going and can't figure out wha
 
 ## Commands
 
-`yarn start` - Compiles and runs with tsx.
+`yarn dev` - Compiles and runs with tsx.
 
 `yarn watch` - Compiles, watches for changes, restarts on changes and runs with tsx.
 
